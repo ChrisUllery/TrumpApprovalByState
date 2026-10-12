@@ -1,0 +1,93 @@
+name: Update approval dashboard
+
+on:
+  schedule:
+    # Daily at 12:17 UTC (8:17 AM Eastern daylight time / 7:17 AM standard time).
+    - cron: '17 12 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/**'
+      - '.github/workflows/update-dashboard.yml'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: trump-approval-dashboard-pages
+  cancel-in-progress: false
+
+jobs:
+  refresh-and-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out project
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Set up Python
+        if: github.event_name != 'push'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Selenium and check Chrome
+        if: github.event_name != 'push'
+        run: |
+          python -m pip install 'selenium>=4.30,<5'
+          google-chrome --version
+
+      - name: Retrieve and validate Civiqs data
+        if: github.event_name != 'push'
+        run: python scripts/update_dashboard_data.py
+
+      - name: Determine whether the public data changed
+        id: changes
+        shell: bash
+        run: |
+          if [[ "${GITHUB_EVENT_NAME}" == 'push' ]]; then
+            echo 'deploy=true' >> "$GITHUB_OUTPUT"
+            echo 'data_changed=false' >> "$GITHUB_OUTPUT"
+          elif git diff --quiet -- docs/data/state_approval.json docs/data/national_approval.json; then
+            echo 'deploy=false' >> "$GITHUB_OUTPUT"
+            echo 'data_changed=false' >> "$GITHUB_OUTPUT"
+            echo 'No newer data; existing Pages deployment is unchanged.'
+          else
+            echo 'deploy=true' >> "$GITHUB_OUTPUT"
+            echo 'data_changed=true' >> "$GITHUB_OUTPUT"
+            git diff --check
+          fi
+
+      - name: Commit verified public data
+        if: steps.changes.outputs.data_changed == 'true'
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/data/state_approval.json docs/data/national_approval.json
+          git commit -m 'Refresh Civiqs approval estimates'
+          git push origin HEAD:main
+
+      # GITHUB_TOKEN commits do not initiate Pages branch builds; deploy explicitly.
+      - name: Configure GitHub Pages
+        if: steps.changes.outputs.deploy == 'true'
+        uses: actions/configure-pages@v5
+
+      - name: Package the static website
+        if: steps.changes.outputs.deploy == 'true'
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: docs
+
+      - name: Publish GitHub Pages
+        if: steps.changes.outputs.deploy == 'true'
+        id: deployment
+        uses: actions/deploy-pages@v4

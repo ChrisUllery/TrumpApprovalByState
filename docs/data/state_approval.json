@@ -23,11 +23,13 @@
     "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true",
     "republican_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Republican",
     "democratic_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Democrat",
-    "retrieved_at_utc": "2026-10-11T20:57:47.302757+00:00",
+    "retrieved_at_utc": "2026-10-12T02:53:38.489208+00:00",
     "trump_2024_votes": 1462616,
     "total_2024_presidential_votes": 2265090,
     "trump_2024_vote_share_pct": 64.57,
-    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx"
+    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx",
+    "republican_neither_display": "14%",
+    "democratic_neither_display": "1%"
   },
   {
     "state": "Alaska",
@@ -53,11 +55,13 @@
     "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true",
     "republican_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Republican",
     "democratic_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Democrat",
-    "retrieved_at_utc": "2026-10-11T20:57:47.302757+00:00",
+    "retrieved_at_utc": "2026-10-12T02:53:38.489208+00:00",
     "trump_2024_votes": 184458,
     "total_2024_presidential_votes": 338177,
     "trump_2024_vote_share_pct": 54.54,
-    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx"
+    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx",
+    "republican_neither_display": "10%",
+    "democratic_neither_display": "<1%"
   },
   {
     "state": "Arizona",
@@ -83,11 +87,13 @@
     "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true",
     "republican_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Republican",
     "democratic_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Democrat",
-    "retrieved_at_utc": "2026-10-11T20:57:47.302757+00:00",
+    "retrieved_at_utc": "2026-10-12T02:53:38.489208+00:00",
     "trump_2024_votes": 1770242,
     "total_2024_presidential_votes": 3390161,
     "trump_2024_vote_share_pct": 52.22,
-    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx"
+    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx",
+    "republican_neither_display": "9%",
+    "democratic_neither_display": "<1%"
   },
   {
     "state": "Arkansas",
@@ -113,11 +119,13 @@
     "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true",
     "republican_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Republican",
     "democratic_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Democrat",
-    "retrieved_at_utc": "2026-10-11T20:57:47.302757+00:00",
+    "retrieved_at_utc": "2026-10-12T02:53:38.489208+00:00",
     "trump_2024_votes": 759241,
     "total_2024_presidential_votes": 1182676,
     "trump_2024_vote_share_pct": 64.2,
-    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx"
+    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx",
+    "republican_neither_display": "9%",
+    "democratic_neither_display": "1%"
   },
   {
     "state": "California",
@@ -143,11 +151,13 @@
     "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true",
     "republican_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Republican",
     "democratic_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Democrat",
-    "retrieved_at_utc": "2026-10-11T20:57:47.302757+00:00",
+    "retrieved_at_utc": "2026-10-12T02:53:38.489208+00:00",
     "trump_2024_votes": 6081697,
     "total_2024_presidential_votes": 15865475,
     "trump_2024_vote_share_pct": 38.33,
-    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx"
+    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx",
+    "republican_neither_display": "9%",
+    "democratic_neither_display": "<1%"
   },
   {
     "state": "Colorado",
@@ -173,11 +183,13 @@
     "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true",
     "republican_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Republican",
     "democratic_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Democrat",
-    "retrieved_at_utc": "2026-10-11T20:57:47.302757+00:00",
+    "retrieved_at_utc": "2026-10-12T02:53:38.489208+00:00",
     "trump_2024_votes": 1377441,
     "total_2024_presidential_votes": 3192745,
     "trump_2024_vote_share_pct": 43.14,
-    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx"
+    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx",
+    "republican_neither_display": "9%",
+    "democratic_neither_display": "<1%"
   },
   {
     "state": "Connecticut",
@@ -203,11 +215,13 @@
     "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true",
     "republican_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Republican",
     "democratic_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Democrat",
-    "retrieved_at_utc": "2026-10-11T20:57:47.302757+00:00",
+    "retrieved_at_utc": "2026-10-12T02:53:38.489208+00:00",
     "trump_2024_votes": 736918,
     "total_2024_presidential_votes": 1759010,
     "trump_2024_vote_share_pct": 41.89,
-    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx"
+    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx",
+    "republican_neither_display": "12%",
+    "democratic_neither_display": "<1%"
   },
   {
     "state": "Delaware",
@@ -233,11 +247,13 @@
     "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true",
     "republican_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Republican",
     "democratic_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Democrat",
-    "retrieved_at_utc": "2026-10-11T20:57:47.302757+00:00",
+    "retrieved_at_utc": "2026-10-12T02:53:38.489208+00:00",
     "trump_2024_votes": 214351,
     "total_2024_presidential_votes": 512912,
     "trump_2024_vote_share_pct": 41.79,
-    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx"
+    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx",
+    "republican_neither_display": "11%",
+    "democratic_neither_display": "<1%"
   },
   {
     "state": "Florida",
@@ -263,11 +279,13 @@
     "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true",
     "republican_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Republican",
     "democratic_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Democrat",
-    "retrieved_at_utc": "2026-10-11T20:57:47.302757+00:00",
+    "retrieved_at_utc": "2026-10-12T02:53:38.489208+00:00",
     "trump_2024_votes": 6110125,
     "total_2024_presidential_votes": 10893752,
     "trump_2024_vote_share_pct": 56.09,
-    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx"
+    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx",
+    "republican_neither_display": "9%",
+    "democratic_neither_display": "<1%"
   },
   {
     "state": "Georgia",
@@ -293,11 +311,13 @@
     "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true",
     "republican_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Republican",
     "democratic_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Democrat",
-    "retrieved_at_utc": "2026-10-11T20:57:47.302757+00:00",
+    "retrieved_at_utc": "2026-10-12T02:53:38.489208+00:00",
     "trump_2024_votes": 2663117,
     "total_2024_presidential_votes": 5250905,
     "trump_2024_vote_share_pct": 50.72,
-    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx"
+    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx",
+    "republican_neither_display": "13%",
+    "democratic_neither_display": "1%"
   },
   {
     "state": "Hawaii",
@@ -323,11 +343,13 @@
     "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true",
     "republican_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Republican",
     "democratic_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Democrat",
-    "retrieved_at_utc": "2026-10-11T20:57:47.302757+00:00",
+    "retrieved_at_utc": "2026-10-12T02:53:38.489208+00:00",
     "trump_2024_votes": 193661,
     "total_2024_presidential_votes": 516701,
     "trump_2024_vote_share_pct": 37.48,
-    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx"
+    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx",
+    "republican_neither_display": "10%",
+    "democratic_neither_display": "<1%"
   },
   {
     "state": "Idaho",
@@ -353,11 +375,13 @@
     "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true",
     "republican_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Republican",
     "democratic_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Democrat",
-    "retrieved_at_utc": "2026-10-11T20:57:47.302757+00:00",
+    "retrieved_at_utc": "2026-10-12T02:53:38.489208+00:00",
     "trump_2024_votes": 605246,
     "total_2024_presidential_votes": 905057,
     "trump_2024_vote_share_pct": 66.87,
-    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx"
+    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx",
+    "republican_neither_display": "12%",
+    "democratic_neither_display": "<1%"
   },
   {
     "state": "Illinois",
@@ -383,11 +407,13 @@
     "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true",
     "republican_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Republican",
     "democratic_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Democrat",
-    "retrieved_at_utc": "2026-10-11T20:57:47.302757+00:00",
+    "retrieved_at_utc": "2026-10-12T02:53:38.489208+00:00",
     "trump_2024_votes": 2449079,
     "total_2024_presidential_votes": 5633310,
     "trump_2024_vote_share_pct": 43.47,
-    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx"
+    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx",
+    "republican_neither_display": "10%",
+    "democratic_neither_display": "<1%"
   },
   {
     "state": "Indiana",
@@ -413,11 +439,13 @@
     "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true",
     "republican_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Republican",
     "democratic_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Democrat",
-    "retrieved_at_utc": "2026-10-11T20:57:47.302757+00:00",
+    "retrieved_at_utc": "2026-10-12T02:53:38.489208+00:00",
     "trump_2024_votes": 1720347,
     "total_2024_presidential_votes": 2936677,
     "trump_2024_vote_share_pct": 58.58,
-    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx"
+    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx",
+    "republican_neither_display": "10%",
+    "democratic_neither_display": "<1%"
   },
   {
     "state": "Iowa",
@@ -443,11 +471,13 @@
     "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true",
     "republican_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Republican",
     "democratic_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Democrat",
-    "retrieved_at_utc": "2026-10-11T20:57:47.302757+00:00",
+    "retrieved_at_utc": "2026-10-12T02:53:38.489208+00:00",
     "trump_2024_votes": 927019,
     "total_2024_presidential_votes": 1663506,
     "trump_2024_vote_share_pct": 55.73,
-    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx"
+    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx",
+    "republican_neither_display": "19%",
+    "democratic_neither_display": "<1%"
   },
   {
     "state": "Kansas",
@@ -473,11 +503,13 @@
     "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true",
     "republican_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Republican",
     "democratic_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Democrat",
-    "retrieved_at_utc": "2026-10-11T20:57:47.302757+00:00",
+    "retrieved_at_utc": "2026-10-12T02:53:38.489208+00:00",
     "trump_2024_votes": 758802,
     "total_2024_presidential_votes": 1327591,
     "trump_2024_vote_share_pct": 57.16,
-    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx"
+    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx",
+    "republican_neither_display": "11%",
+    "democratic_neither_display": "<1%"
   },
   {
     "state": "Kentucky",
@@ -503,11 +535,13 @@
     "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true",
     "republican_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Republican",
     "democratic_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Democrat",
-    "retrieved_at_utc": "2026-10-11T20:57:47.302757+00:00",
+    "retrieved_at_utc": "2026-10-12T02:53:38.489208+00:00",
     "trump_2024_votes": 1337494,
     "total_2024_presidential_votes": 2074530,
     "trump_2024_vote_share_pct": 64.47,
-    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx"
+    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx",
+    "republican_neither_display": "16%",
+    "democratic_neither_display": "<1%"
   },
   {
     "state": "Louisiana",
@@ -533,11 +567,13 @@
     "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true",
     "republican_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Republican",
     "democratic_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Democrat",
-    "retrieved_at_utc": "2026-10-11T20:57:47.302757+00:00",
+    "retrieved_at_utc": "2026-10-12T02:53:38.489208+00:00",
     "trump_2024_votes": 1208505,
     "total_2024_presidential_votes": 2006975,
     "trump_2024_vote_share_pct": 60.22,
-    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx"
+    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx",
+    "republican_neither_display": "11%",
+    "democratic_neither_display": "1%"
   },
   {
     "state": "Maine",
@@ -563,11 +599,13 @@
     "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true",
     "republican_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Republican",
     "democratic_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Democrat",
-    "retrieved_at_utc": "2026-10-11T20:57:47.302757+00:00",
+    "retrieved_at_utc": "2026-10-12T02:53:38.489208+00:00",
     "trump_2024_votes": 377977,
     "total_2024_presidential_votes": 831375,
     "trump_2024_vote_share_pct": 45.46,
-    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx"
+    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx",
+    "republican_neither_display": "12%",
+    "democratic_neither_display": "<1%"
   },
   {
     "state": "Maryland",
@@ -593,11 +631,13 @@
     "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true",
     "republican_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Republican",
     "democratic_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Democrat",
-    "retrieved_at_utc": "2026-10-11T20:57:47.302757+00:00",
+    "retrieved_at_utc": "2026-10-12T02:53:38.489208+00:00",
     "trump_2024_votes": 1035550,
     "total_2024_presidential_votes": 3038334,
     "trump_2024_vote_share_pct": 34.08,
-    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx"
+    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx",
+    "republican_neither_display": "15%",
+    "democratic_neither_display": "<1%"
   },
   {
     "state": "Massachusetts",
@@ -623,11 +663,13 @@
     "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true",
     "republican_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Republican",
     "democratic_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Democrat",
-    "retrieved_at_utc": "2026-10-11T20:57:47.302757+00:00",
+    "retrieved_at_utc": "2026-10-12T02:53:38.489208+00:00",
     "trump_2024_votes": 1251303,
     "total_2024_presidential_votes": 3473668,
     "trump_2024_vote_share_pct": 36.02,
-    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx"
+    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx",
+    "republican_neither_display": "8%",
+    "democratic_neither_display": "<1%"
   },
   {
     "state": "Michigan",
@@ -653,11 +695,13 @@
     "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true",
     "republican_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Republican",
     "democratic_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Democrat",
-    "retrieved_at_utc": "2026-10-11T20:57:47.302757+00:00",
+    "retrieved_at_utc": "2026-10-12T02:53:38.489208+00:00",
     "trump_2024_votes": 2816636,
     "total_2024_presidential_votes": 5664186,
     "trump_2024_vote_share_pct": 49.73,
-    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx"
+    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx",
+    "republican_neither_display": "9%",
+    "democratic_neither_display": "<1%"
   },
   {
     "state": "Minnesota",
@@ -683,11 +727,13 @@
     "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true",
     "republican_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Republican",
     "democratic_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Democrat",
-    "retrieved_at_utc": "2026-10-11T20:57:47.302757+00:00",
+    "retrieved_at_utc": "2026-10-12T02:53:38.489208+00:00",
     "trump_2024_votes": 1519032,
     "total_2024_presidential_votes": 3253920,
     "trump_2024_vote_share_pct": 46.68,
-    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx"
+    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx",
+    "republican_neither_display": "16%",
+    "democratic_neither_display": "<1%"
   },
   {
     "state": "Mississippi",
@@ -713,11 +759,13 @@
     "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true",
     "republican_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Republican",
     "democratic_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Democrat",
-    "retrieved_at_utc": "2026-10-11T20:57:47.302757+00:00",
+    "retrieved_at_utc": "2026-10-12T02:53:38.489208+00:00",
     "trump_2024_votes": 747744,
     "total_2024_presidential_votes": 1228008,
     "trump_2024_vote_share_pct": 60.89,
-    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx"
+    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx",
+    "republican_neither_display": "8%",
+    "democratic_neither_display": "1%"
   },
   {
     "state": "Missouri",
@@ -743,11 +791,13 @@
     "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true",
     "republican_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Republican",
     "democratic_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Democrat",
-    "retrieved_at_utc": "2026-10-11T20:57:47.302757+00:00",
+    "retrieved_at_utc": "2026-10-12T02:53:38.489208+00:00",
     "trump_2024_votes": 1751986,
     "total_2024_presidential_votes": 2995327,
     "trump_2024_vote_share_pct": 58.49,
-    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx"
+    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx",
+    "republican_neither_display": "11%",
+    "democratic_neither_display": "<1%"
   },
   {
     "state": "Montana",
@@ -773,11 +823,13 @@
     "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true",
     "republican_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Republican",
     "democratic_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Democrat",
-    "retrieved_at_utc": "2026-10-11T20:57:47.302757+00:00",
+    "retrieved_at_utc": "2026-10-12T02:53:38.489208+00:00",
     "trump_2024_votes": 352079,
     "total_2024_presidential_votes": 602990,
     "trump_2024_vote_share_pct": 58.39,
-    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx"
+    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx",
+    "republican_neither_display": "11%",
+    "democratic_neither_display": "<1%"
   },
   {
     "state": "Nebraska",
@@ -803,11 +855,13 @@
     "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true",
     "republican_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Republican",
     "democratic_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Democrat",
-    "retrieved_at_utc": "2026-10-11T20:57:47.302757+00:00",
+    "retrieved_at_utc": "2026-10-12T02:53:38.489208+00:00",
     "trump_2024_votes": 564816,
     "total_2024_presidential_votes": 952182,
     "trump_2024_vote_share_pct": 59.32,
-    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx"
+    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx",
+    "republican_neither_display": "12%",
+    "democratic_neither_display": "<1%"
   },
   {
     "state": "Nevada",
@@ -833,11 +887,13 @@
     "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true",
     "republican_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Republican",
     "democratic_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Democrat",
-    "retrieved_at_utc": "2026-10-11T20:57:47.302757+00:00",
+    "retrieved_at_utc": "2026-10-12T02:53:38.489208+00:00",
     "trump_2024_votes": 751205,
     "total_2024_presidential_votes": 1484840,
     "trump_2024_vote_share_pct": 50.59,
-    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx"
+    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx",
+    "republican_neither_display": "10%",
+    "democratic_neither_display": "<1%"
   },
   {
     "state": "New Hampshire",
@@ -863,11 +919,13 @@
     "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true",
     "republican_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Republican",
     "democratic_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Democrat",
-    "retrieved_at_utc": "2026-10-11T20:57:47.302757+00:00",
+    "retrieved_at_utc": "2026-10-12T02:53:38.489208+00:00",
     "trump_2024_votes": 395523,
     "total_2024_presidential_votes": 826189,
     "trump_2024_vote_share_pct": 47.87,
-    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx"
+    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx",
+    "republican_neither_display": "10%",
+    "democratic_neither_display": "<1%"
   },
   {
     "state": "New Jersey",
@@ -893,11 +951,13 @@
     "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true",
     "republican_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Republican",
     "democratic_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Democrat",
-    "retrieved_at_utc": "2026-10-11T20:57:47.302757+00:00",
+    "retrieved_at_utc": "2026-10-12T02:53:38.489208+00:00",
     "trump_2024_votes": 1968215,
     "total_2024_presidential_votes": 4272725,
     "trump_2024_vote_share_pct": 46.06,
-    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx"
+    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx",
+    "republican_neither_display": "9%",
+    "democratic_neither_display": "<1%"
   },
   {
     "state": "New Mexico",
@@ -923,11 +983,13 @@
     "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true",
     "republican_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Republican",
     "democratic_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Democrat",
-    "retrieved_at_utc": "2026-10-11T20:57:47.302757+00:00",
+    "retrieved_at_utc": "2026-10-12T02:53:38.489208+00:00",
     "trump_2024_votes": 423391,
     "total_2024_presidential_votes": 923403,
     "trump_2024_vote_share_pct": 45.85,
-    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx"
+    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx",
+    "republican_neither_display": "7%",
+    "democratic_neither_display": "<1%"
   },
   {
     "state": "New York",
@@ -953,11 +1015,13 @@
     "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true",
     "republican_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Republican",
     "democratic_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Democrat",
-    "retrieved_at_utc": "2026-10-11T20:57:47.302757+00:00",
+    "retrieved_at_utc": "2026-10-12T02:53:38.489208+00:00",
     "trump_2024_votes": 3578899,
     "total_2024_presidential_votes": 8262495,
     "trump_2024_vote_share_pct": 43.31,
-    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx"
+    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx",
+    "republican_neither_display": "11%",
+    "democratic_neither_display": "<1%"
   },
   {
     "state": "North Carolina",
@@ -983,11 +1047,13 @@
     "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true",
     "republican_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Republican",
     "democratic_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Democrat",
-    "retrieved_at_utc": "2026-10-11T20:57:47.302757+00:00",
+    "retrieved_at_utc": "2026-10-12T02:53:38.489208+00:00",
     "trump_2024_votes": 2898423,
     "total_2024_presidential_votes": 5699141,
     "trump_2024_vote_share_pct": 50.86,
-    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx"
+    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx",
+    "republican_neither_display": "10%",
+    "democratic_neither_display": "1%"
   },
   {
     "state": "North Dakota",
@@ -1013,11 +1079,13 @@
     "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true",
     "republican_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Republican",
     "democratic_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Democrat",
-    "retrieved_at_utc": "2026-10-11T20:57:47.302757+00:00",
+    "retrieved_at_utc": "2026-10-12T02:53:38.489208+00:00",
     "trump_2024_votes": 246505,
     "total_2024_presidential_votes": 368155,
     "trump_2024_vote_share_pct": 66.96,
-    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx"
+    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx",
+    "republican_neither_display": "10%",
+    "democratic_neither_display": "<1%"
   },
   {
     "state": "Ohio",
@@ -1043,11 +1111,13 @@
     "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true",
     "republican_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Republican",
     "democratic_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Democrat",
-    "retrieved_at_utc": "2026-10-11T20:57:47.302757+00:00",
+    "retrieved_at_utc": "2026-10-12T02:53:38.489208+00:00",
     "trump_2024_votes": 3180116,
     "total_2024_presidential_votes": 5767788,
     "trump_2024_vote_share_pct": 55.14,
-    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx"
+    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx",
+    "republican_neither_display": "11%",
+    "democratic_neither_display": "<1%"
   },
   {
     "state": "Oklahoma",
@@ -1073,11 +1143,13 @@
     "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true",
     "republican_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Republican",
     "democratic_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Democrat",
-    "retrieved_at_utc": "2026-10-11T20:57:47.302757+00:00",
+    "retrieved_at_utc": "2026-10-12T02:53:38.489208+00:00",
     "trump_2024_votes": 1036213,
     "total_2024_presidential_votes": 1566173,
     "trump_2024_vote_share_pct": 66.16,
-    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx"
+    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx",
+    "republican_neither_display": "13%",
+    "democratic_neither_display": "<1%"
   },
   {
     "state": "Oregon",
@@ -1103,11 +1175,13 @@
     "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true",
     "republican_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Republican",
     "democratic_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Democrat",
-    "retrieved_at_utc": "2026-10-11T20:57:47.302757+00:00",
+    "retrieved_at_utc": "2026-10-12T02:53:38.489208+00:00",
     "trump_2024_votes": 919480,
     "total_2024_presidential_votes": 2244493,
     "trump_2024_vote_share_pct": 40.97,
-    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx"
+    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx",
+    "republican_neither_display": "9%",
+    "democratic_neither_display": "<1%"
   },
   {
     "state": "Pennsylvania",
@@ -1133,11 +1207,13 @@
     "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true",
     "republican_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Republican",
     "democratic_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Democrat",
-    "retrieved_at_utc": "2026-10-11T20:57:47.302757+00:00",
+    "retrieved_at_utc": "2026-10-12T02:53:38.489208+00:00",
     "trump_2024_votes": 3543308,
     "total_2024_presidential_votes": 7058732,
     "trump_2024_vote_share_pct": 50.2,
-    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx"
+    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx",
+    "republican_neither_display": "11%",
+    "democratic_neither_display": "<1%"
   },
   {
     "state": "Rhode Island",
@@ -1163,11 +1239,13 @@
     "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true",
     "republican_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Republican",
     "democratic_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Democrat",
-    "retrieved_at_utc": "2026-10-11T20:57:47.302757+00:00",
+    "retrieved_at_utc": "2026-10-12T02:53:38.489208+00:00",
     "trump_2024_votes": 214406,
     "total_2024_presidential_votes": 513386,
     "trump_2024_vote_share_pct": 41.76,
-    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx"
+    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx",
+    "republican_neither_display": "11%",
+    "democratic_neither_display": "<1%"
   },
   {
     "state": "South Carolina",
@@ -1193,11 +1271,13 @@
     "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true",
     "republican_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Republican",
     "democratic_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Democrat",
-    "retrieved_at_utc": "2026-10-11T20:57:47.302757+00:00",
+    "retrieved_at_utc": "2026-10-12T02:53:38.489208+00:00",
     "trump_2024_votes": 1483747,
     "total_2024_presidential_votes": 2548140,
     "trump_2024_vote_share_pct": 58.23,
-    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx"
+    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx",
+    "republican_neither_display": "10%",
+    "democratic_neither_display": "1%"
   },
   {
     "state": "South Dakota",
@@ -1223,11 +1303,13 @@
     "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true",
     "republican_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Republican",
     "democratic_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Democrat",
-    "retrieved_at_utc": "2026-10-11T20:57:47.302757+00:00",
+    "retrieved_at_utc": "2026-10-12T02:53:38.489208+00:00",
     "trump_2024_votes": 272081,
     "total_2024_presidential_votes": 428922,
     "trump_2024_vote_share_pct": 63.43,
-    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx"
+    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx",
+    "republican_neither_display": "12%",
+    "democratic_neither_display": "<1%"
   },
   {
     "state": "Tennessee",
@@ -1253,11 +1335,13 @@
     "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true",
     "republican_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Republican",
     "democratic_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Democrat",
-    "retrieved_at_utc": "2026-10-11T20:57:47.302757+00:00",
+    "retrieved_at_utc": "2026-10-12T02:53:38.489208+00:00",
     "trump_2024_votes": 1966865,
     "total_2024_presidential_votes": 3063942,
     "trump_2024_vote_share_pct": 64.19,
-    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx"
+    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx",
+    "republican_neither_display": "12%",
+    "democratic_neither_display": "<1%"
   },
   {
     "state": "Texas",
@@ -1283,11 +1367,13 @@
     "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true",
     "republican_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Republican",
     "democratic_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Democrat",
-    "retrieved_at_utc": "2026-10-11T20:57:47.302757+00:00",
+    "retrieved_at_utc": "2026-10-12T02:53:38.489208+00:00",
     "trump_2024_votes": 6393597,
     "total_2024_presidential_votes": 11388674,
     "trump_2024_vote_share_pct": 56.14,
-    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx"
+    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx",
+    "republican_neither_display": "11%",
+    "democratic_neither_display": "<1%"
   },
   {
     "state": "Utah",
@@ -1313,11 +1399,13 @@
     "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true",
     "republican_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Republican",
     "democratic_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Democrat",
-    "retrieved_at_utc": "2026-10-11T20:57:47.302757+00:00",
+    "retrieved_at_utc": "2026-10-12T02:53:38.489208+00:00",
     "trump_2024_votes": 883818,
     "total_2024_presidential_votes": 1488494,
     "trump_2024_vote_share_pct": 59.38,
-    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx"
+    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx",
+    "republican_neither_display": "14%",
+    "democratic_neither_display": "<1%"
   },
   {
     "state": "Vermont",
@@ -1343,11 +1431,13 @@
     "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true",
     "republican_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Republican",
     "democratic_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Democrat",
-    "retrieved_at_utc": "2026-10-11T20:57:47.302757+00:00",
+    "retrieved_at_utc": "2026-10-12T02:53:38.489208+00:00",
     "trump_2024_votes": 119395,
     "total_2024_presidential_votes": 369422,
     "trump_2024_vote_share_pct": 32.32,
-    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx"
+    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx",
+    "republican_neither_display": "10%",
+    "democratic_neither_display": "<1%"
   },
   {
     "state": "Virginia",
@@ -1373,11 +1463,13 @@
     "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true",
     "republican_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Republican",
     "democratic_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Democrat",
-    "retrieved_at_utc": "2026-10-11T20:57:47.302757+00:00",
+    "retrieved_at_utc": "2026-10-12T02:53:38.489208+00:00",
     "trump_2024_votes": 2074097,
     "total_2024_presidential_votes": 4503288,
     "trump_2024_vote_share_pct": 46.06,
-    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx"
+    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx",
+    "republican_neither_display": "8%",
+    "democratic_neither_display": "<1%"
   },
   {
     "state": "Washington",
@@ -1403,11 +1495,13 @@
     "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true",
     "republican_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Republican",
     "democratic_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Democrat",
-    "retrieved_at_utc": "2026-10-11T20:57:47.302757+00:00",
+    "retrieved_at_utc": "2026-10-12T02:53:38.489208+00:00",
     "trump_2024_votes": 1530923,
     "total_2024_presidential_votes": 3924243,
     "trump_2024_vote_share_pct": 39.01,
-    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx"
+    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx",
+    "republican_neither_display": "12%",
+    "democratic_neither_display": "<1%"
   },
   {
     "state": "West Virginia",
@@ -1433,11 +1527,13 @@
     "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true",
     "republican_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Republican",
     "democratic_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Democrat",
-    "retrieved_at_utc": "2026-10-11T20:57:47.302757+00:00",
+    "retrieved_at_utc": "2026-10-12T02:53:38.489208+00:00",
     "trump_2024_votes": 533556,
     "total_2024_presidential_votes": 762582,
     "trump_2024_vote_share_pct": 69.97,
-    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx"
+    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx",
+    "republican_neither_display": "11%",
+    "democratic_neither_display": "<1%"
   },
   {
     "state": "Wisconsin",
@@ -1463,11 +1559,13 @@
     "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true",
     "republican_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Republican",
     "democratic_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Democrat",
-    "retrieved_at_utc": "2026-10-11T20:57:47.302757+00:00",
+    "retrieved_at_utc": "2026-10-12T02:53:38.489208+00:00",
     "trump_2024_votes": 1697626,
     "total_2024_presidential_votes": 3422918,
     "trump_2024_vote_share_pct": 49.6,
-    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx"
+    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx",
+    "republican_neither_display": "10%",
+    "democratic_neither_display": "<1%"
   },
   {
     "state": "Wyoming",
@@ -1493,10 +1591,12 @@
     "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true",
     "republican_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Republican",
     "democratic_source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Democrat",
-    "retrieved_at_utc": "2026-10-11T20:57:47.302757+00:00",
+    "retrieved_at_utc": "2026-10-12T02:53:38.489208+00:00",
     "trump_2024_votes": 192633,
     "total_2024_presidential_votes": 269048,
     "trump_2024_vote_share_pct": 71.6,
-    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx"
+    "fec_2024_source_url": "https://www.fec.gov/documents/5645/2024presgeresults.xlsx",
+    "republican_neither_display": "12%",
+    "democratic_neither_display": "<1%"
   }
 ]
