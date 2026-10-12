@@ -20,7 +20,7 @@ from pathlib import Path
 from urllib.parse import urlencode
 
 from selenium import webdriver
-from selenium.common.exceptions import StaleElementReferenceException
+from selenium.common.exceptions import StaleElementReferenceException, TimeoutException
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -183,9 +183,39 @@ def main():
             url = CIVIQS + "?" + urlencode(params)
             print(f"Fetching {key} estimates from Civiqs...", flush=True)
             browser.get(url)
-            state_and_national, date = WebDriverWait(browser, 75, poll_frequency=1).until(
-                lambda driver: source_ready(driver, party, names)
-            )
+            try:
+                state_and_national, date = WebDriverWait(browser, 75, poll_frequency=1).until(
+                    lambda driver: source_ready(driver, party, names)
+                )
+            except TimeoutException as exc:
+                # Civiqs GitHub runner diagnostics: show what remote Chrome actually received.
+                # Never write incomplete polling data to docs/data on failure.
+                directory = ROOT / "data" / "raw" / "actions_diagnostics"
+                directory.mkdir(parents=True, exist_ok=True)
+                try:
+                    row_count = len(browser.find_elements(By.XPATH, ROW_SELECTOR))
+                    percent_count = len(browser.find_elements(By.CSS_SELECTOR, '[data-testid="desktop-percent"]'))
+                    text = browser.find_element(By.TAG_NAME, "body").text
+                    summary = (
+                        f"Group: {key}\n"
+                        f"Current URL: {browser.current_url}\n"
+                        f"Page title: {browser.title}\n"
+                        f"Document ready state: {browser.execute_script('return document.readyState')}\n"
+                        f"Matching subgroup rows: {row_count}\n"
+                        f"Visible percentage elements: {percent_count}\n"
+                        f"Visible page text (first 1800 characters):\n{text[:1800]}\n"
+                    )
+                    print("CIVIQS DIAGNOSTICS\n" + summary, flush=True)
+                    (directory / "summary.txt").write_text(summary, encoding="utf-8")
+                    browser.save_screenshot(str(directory / "browser.png"))
+                    (directory / "page.html").write_text(browser.page_source, encoding="utf-8")
+                    print(f"Saved diagnostic files in {directory}", flush=True)
+                except Exception as diagnostic_error:
+                    print(f"Could not capture full browser diagnostics: {diagnostic_error}", flush=True)
+                raise RuntimeError(
+                    f"Civiqs {key} view did not expose 50 states plus a national Total on the GitHub runner. "
+                    "Inspect the diagnostics artifact before changing selectors or retrying."
+                ) from exc
             state_rows, national_row = state_and_national
             if set(state_rows) != names:
                 raise ValueError(f"Civiqs {key}: state list changed unexpectedly")
