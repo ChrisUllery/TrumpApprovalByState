@@ -66,3 +66,21 @@
 .election-context-statement .election-context-share { display: inline-block; font-size: 22px; line-height: 1.2; font-variant-numeric: tabular-nums; letter-spacing: -.03em; white-space: nowrap; }
 .election-context a { color: #166873; font-size: 11px; font-weight: 700; text-underline-offset: 2px; }
 @media (max-width:700px) { .data-table { min-width: 750px; } }
+
+/* National default and return navigation */
+.back-national { display: inline-flex; align-items: center; padding: 0; margin-top: 10px; border: 0; background: transparent; color: #166873; font-size: 11px; font-weight: 750; text-align: left; }
+.back-national:hover { text-decoration: underline; }
+.back-national[hidden], #national-2024-statement[hidden], #state-2024-statement[hidden] { display: none; }
+
+/* national-select-prompt-v1 */
+.national-select-prompt {
+    margin: 9px 0 0;
+    color: #405b6e;
+    font-size: 12px;
+    line-height: 1.45;
+    font-weight: 650;
+}
+.national-select-prompt[hidden] { display: none; }
+@media (max-width: 1120px) {
+    .national-select-prompt { grid-column: 1; }
+}

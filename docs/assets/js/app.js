@@ -5,6 +5,7 @@
   "use strict";
 
   const DATA_PATH = "./data/state_approval.json";
+  const NATIONAL_PATH = "./data/national_approval.json";
   const MAP_PATH = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-albers-10m.json";
   const CIVIQS = "https://civiqs.com/results/approve_president_trump_2025";
   const METRIC_LABELS = {net:"Overall net approval", republican:"Republican net approval", democratic:"Democratic net approval"};
@@ -16,7 +17,7 @@
     "LA", "MI", "MS", "MO", "MT", "NE", "NV", "NC", "ND", "OH", "OK",
     "PA", "SC", "SD", "TN", "TX", "UT", "WV", "WI", "WY"
   ]);
-  const state = {records: [], byName: new Map(), features: [], metric:"net", selected:"Pennsylvania", search:"", sortColumn:null, sortDirection:"asc"};
+  const state = {records: [], byName: new Map(), features: [], metric:"net", selected:null, national:null, search:"", sortColumn:null, sortDirection:"asc"};
   const $ = id => document.getElementById(id);
 
   // Every map mode measures approval minus disapproval within its population.
@@ -139,12 +140,43 @@
     if (dates.size !== 1 || ![...dates][0]) throw new Error("State reporting dates are inconsistent or missing.");
     return rows;
   }
+  function validateNational(raw) {
+    if (!raw || !/^\d{4}-\d{2}-\d{2}$/.test(raw.report_date || "")) {
+      throw new Error("National Civiqs reporting date is missing or invalid.");
+    }
+    for (const metric of ["net", "republican", "democratic"]) {
+      const g = raw.groups?.[metric];
+      if (!g) throw new Error(`Missing national Civiqs ${metric} data.`);
+      for (const field of ["approve", "disapprove", "neither"]) {
+        if (typeof g[field] !== "number" || !Number.isFinite(g[field]) || g[field] < 0 || g[field] > 100 ||
+            typeof g[`${field}_display`] !== "string") {
+          throw new Error(`Invalid national ${metric} ${field} value.`);
+        }
+      }
+      if (Math.abs(g.approve + g.disapprove + g.neither - 100) > 2 || !g.source_url) {
+        throw new Error(`Invalid national ${metric} percentages or source.`);
+      }
+    }
+    const election = raw.election_2024;
+    if (!election || election.trump_votes !== 77302580 ||
+        election.total_presidential_votes !== 155238302 ||
+        Math.abs(100 * election.trump_votes / election.total_presidential_votes - election.trump_vote_share_pct) > .011) {
+      throw new Error("Invalid official 2024 national election totals.");
+    }
+    return raw;
+  }
   function showError(message) {$("error").textContent = message;$("error").hidden = false;}
   function setMetric(metric) {
     if (!METRIC_LABELS[metric]) return;
     state.metric = metric;
     document.querySelectorAll(".metric-btn").forEach(b => {const active = b.dataset.metric === metric;b.classList.toggle("is-active",active);b.setAttribute("aria-pressed",String(active));});
     renderMapColors();renderLegend();renderDetail();
+  }
+  function showNational() {
+    state.selected = null;
+    d3.selectAll(".state-path").classed("is-selected", false);
+    renderDetail();
+    renderTable();
   }
   function choose(name) {
     if (!state.byName.has(name)) return;
@@ -281,7 +313,40 @@
       body.appendChild(tr);
     }
   }
+  function renderNationalDetail() {
+    const national = state.national;
+    const group = national.groups[state.metric];
+    const election = national.election_2024;
+    $("detail-eyebrow").textContent = "National overview";
+    $("back-national").hidden = true;
+    $("national-select-prompt").hidden = false;
+    $("detail-title").textContent = "United States";
+    $("detail-abbr").textContent = "US";
+    $("detail-date").textContent = `Civiqs national reporting date: ${formatDate(national.report_date)}`;
+    $("detail-big").textContent = `${signed(roundNet(group.approve - group.disapprove))}%`;
+    $("detail-big-caption").textContent = `National ${METRIC_LABELS[state.metric].toLowerCase()} (percentage points)`;
+    for (const key of ["approve", "disapprove", "neither"]) {
+      $(`detail-${key}`).textContent = group[`${key}_display`];
+      $(`bar-${key}`).style.width = `${group[key]}%`;
+    }
+    const population = state.metric === "republican" ? "Republican registered voters" :
+      state.metric === "democratic" ? "Democratic registered voters" : "registered voters";
+    $("detail-group").textContent = `Estimated approval among ${population} nationwide`;
+    $("state-2024-statement").hidden = true;
+    $("national-2024-statement").hidden = false;
+    $("national-2024-share").textContent = `${election.trump_vote_share_pct.toFixed(2)}%`;
+    $("detail-2024-source").href = election.source_url;
+    $("detail-source").href = group.source_url;
+    $("detail-source").firstChild.textContent = "See national results at Civiqs ";
+  }
   function renderDetail() {
+    if (!state.selected) { renderNationalDetail(); return; }
+    $("detail-eyebrow").textContent = "State detail";
+    $("back-national").hidden = false;
+    $("national-select-prompt").hidden = true;
+    $("state-2024-statement").hidden = false;
+    $("national-2024-statement").hidden = true;
+    $("detail-source").firstChild.textContent = "See state results at Civiqs ";
     const r = state.byName.get(state.selected);
     if (!r) return;
     const group = groupValues(r);
@@ -310,15 +375,21 @@
     $("detail-source").href = source.toString();
   }
   async function init() {
+    $("back-national").addEventListener("click", showNational);
     $("state-search").addEventListener("input",e=>{state.search=e.target.value;renderTable();});
     document.querySelectorAll(".table-sort-btn").forEach(button => button.addEventListener("click", () => setTableSort(button.dataset.sort)));
     document.querySelectorAll(".metric-btn").forEach(b=>b.addEventListener("click",()=>setMetric(b.dataset.metric)));
     try {
-      const response=await fetch(DATA_PATH,{cache:"no-store"});
+      const [response, nationalResponse] = await Promise.all([
+        fetch(DATA_PATH, {cache:"no-store"}),
+        fetch(NATIONAL_PATH, {cache:"no-store"})
+      ]);
       if (!response.ok) throw new Error(`Could not load ${DATA_PATH} (HTTP ${response.status}). Run: python scripts/prepare_preview.py`);
+      if (!nationalResponse.ok) throw new Error(`Missing ${NATIONAL_PATH} (HTTP ${nationalResponse.status}). Run: python scripts/collect_national_overview.py`);
+      state.national = validateNational(await nationalResponse.json());
       state.records=validateRecords(await response.json());
       state.byName=new Map(state.records.map(r=>[r.state,r]));
-      if(!state.byName.has(state.selected))state.selected=state.records[0].state;
+      // Start with the national overview; a state is selected only by visitor action.
       $("source-date").textContent=`Civiqs date: ${formatDate(state.records[0].reportDate)}`;
       $("states-count").textContent=`${state.records.length} states`;
       const retrieval = state.records[0].retrievedAt;

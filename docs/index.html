@@ -73,9 +73,11 @@
       </div>
 
       <aside class="panel detail-panel" aria-labelledby="detail-title">
-        <p class="eyebrow small">State detail</p>
+        <p class="eyebrow small" id="detail-eyebrow">National overview</p>
         <div class="detail-title-row"><h2 id="detail-title">Select a state</h2><span id="detail-abbr" class="abbr"></span></div>
         <p id="detail-date" class="detail-date">Reporting date —</p>
+        <p id="national-select-prompt" class="national-select-prompt" hidden>Click a state on the map to see state details.</p>
+        <button id="back-national" type="button" class="back-national" hidden>← Back to national overview</button>
         <div class="detail-rule"></div>
         <div class="metric-big"><span id="detail-big" class="metric-value">—</span><span id="detail-big-caption" class="metric-caption">Overall net approval</span></div>
         <p id="detail-group" class="detail-group">Estimated approval among registered voters</p>
@@ -86,7 +88,8 @@
         </div>
         <div class="election-context">
           <span class="election-context-label">2024 presidential election</span>
-          <p class="election-context-statement">Trump <strong id="detail-2024-result">—</strong> <strong id="detail-2024-state">—</strong> in 2024 with <strong id="detail-2024-share" class="election-context-share">—</strong> of the votes cast.</p>
+          <p id="state-2024-statement" class="election-context-statement">Trump <strong id="detail-2024-result">—</strong> <strong id="detail-2024-state">—</strong> in 2024 with <strong id="detail-2024-share" class="election-context-share">—</strong> of the votes cast.</p>
+          <p id="national-2024-statement" class="election-context-statement" hidden>Trump <strong>won the 2024 presidential election</strong> with <strong id="national-2024-share" class="election-context-share">—</strong> of the nationwide popular vote.</p>
           <a id="detail-2024-source" href="https://www.fec.gov/documents/5645/2024presgeresults.xlsx" target="_blank" rel="noopener noreferrer">Source: Federal Election Commission ↗</a>
         </div>
         <a id="detail-source" class="source-button" href="https://civiqs.com/results/approve_president_trump_2025" target="_blank" rel="noopener noreferrer">See state results at Civiqs <span aria-hidden="true">↗</span></a>
@@ -97,6 +100,7 @@
     <section id="methodology" class="methodology" aria-labelledby="method-title">
       <div><p class="eyebrow small">About this project</p><h2 id="method-title">Source & methodology</h2></div>
       <div class="method-copy">
+        <p><strong>National overview:</strong> On first load, the sidebar displays Civiqs's separately reported nationwide estimates, not an average of state estimates. The national and state reporting dates appear in their respective views and may differ when updated at different times. National and state approval estimates describe registered voters; 2024 popular-vote shares describe actual presidential votes cast.</p>
         <p><strong>Polling source:</strong> <a href="https://civiqs.com/results/approve_president_trump_2025" target="_blank" rel="noopener noreferrer">Civiqs — Donald Trump: Job Approval, Second Term</a>. Values shown are rounded modeled estimates as displayed on the Civiqs results page, not results of 50 independent state polls. See <a href="https://civiqs.com/content/methodology" target="_blank" rel="noopener noreferrer">Civiqs's methodology</a>. Civiqs estimates are based on sampled survey responses and statistical modeling; they do not represent interviews with every registered voter in a state.</p>
         <p><strong>Map views:</strong> All three views show <em>net approval</em>, calculated as approval minus disapproval, in percentage points (pp). A % sign is used beside net values as a familiar display convention, but the calculation is a difference in percentage points. Overall uses all registered voters; Republican and Democratic views measure net approval <em>within each party</em> for the selected state. The party maps use their own labeled, data-driven color ranges to make small differences visible; colors should not be compared across different map views.</p>
         <p><strong>Rounding:</strong> All net values are derived from the displayed approval and disapproval estimates, not Civiqs's unrounded model, and may differ slightly from Civiqs's published net values. When Civiqs shows &lt;1%, its source label is preserved and 0.5% is used as a computational placeholder. All derived net figures are rounded to the nearest whole number for display, with halves rounded away from zero. These values remain approximate. Percentages may not total 100 because of rounding.</p>
