@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore state-level Donald Trump job approval estimates from Civiqs.">
+  <title>Trump Approval by State | State Polling Dashboard</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
+  <script defer src="./assets/js/app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-content">
+      <a class="brand" href="./index.html"><span class="brand-mark" aria-hidden="true"></span>State Polling Lab</a>
+      <a class="top-link" href="#methodology">Data & methodology <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="intro" aria-labelledby="page-title">
+      <p class="eyebrow">50-state public opinion tracker <span class="eyebrow-dot" aria-hidden="true">•</span> Civiqs estimates</p>
+      <h1 id="page-title">Trump approval <em>by state</em></h1>
+      <p class="lede">An interactive view of Civiqs estimates of Trump's job approval among registered voters, including state-by-state Republican and Democratic breakdowns.</p>
+      <div class="metadata" aria-live="polite"><span class="meta-tag" id="source-date">Source date: loading…</span><span class="meta-tag" id="states-count">50 states expected</span><span class="meta-tag" id="retrieved-at">Snapshot: loading…</span></div>
+    </section>
+
+    <div id="error" class="error-panel" role="alert" hidden></div>
+
+    <section class="dashboard" aria-label="Approval dashboard">
+      <div class="dashboard-main">
+        <div class="panel map-panel">
+          <div class="panel-heading">
+            <div><p class="eyebrow small">Geographic view</p><h2>Explore the map</h2></div>
+            <div class="segmented" role="group" aria-label="Choose map metric">
+              <button class="metric-btn is-active" data-metric="net" aria-pressed="true">Overall net</button>
+              <button class="metric-btn" data-metric="republican" aria-pressed="false">Republican net</button>
+              <button class="metric-btn" data-metric="democratic" aria-pressed="false">Democratic net</button>
+            </div>
+          </div>
+          <div id="map-frame" class="map-frame">
+            <svg id="us-map" viewBox="0 0 975 610" role="img" aria-label="Interactive United States map showing polling estimates by state"></svg>
+            <div id="tooltip" class="tooltip" hidden></div>
+            <div id="map-loading" class="map-loading">Loading state boundaries…</div>
+          </div>
+          <div class="map-footer">
+            <div class="legend-block"><span class="legend-title" id="legend-label">Overall net approval</span><div class="legend-ramp" id="legend-ramp"></div><div class="legend-ticks" id="legend-ticks"></div></div>
+            <span class="map-hint">Select a state on the map or in the table</span>
+          </div>
+        </div>
+
+        <div class="panel table-panel">
+          <div class="panel-heading table-heading"><div><p class="eyebrow small">State data</p><h2>All 50 states</h2></div><span class="table-count" id="shown-count">—</span></div>
+          <div class="table-controls">
+            <label class="sr-only" for="state-search">Find a state</label>
+            <input type="search" id="state-search" placeholder="Find a state…" autocomplete="off">
+          </div>
+          <div class="table-scroll">
+            <table class="data-table">
+              <thead><tr>
+                <th scope="col" data-sort-column="state" aria-sort="none"><button type="button" class="table-sort-btn" data-sort="state">State <span class="sort-indicator" aria-hidden="true">↕</span></button></th>
+                <th scope="col" data-sort-column="overall" aria-sort="none"><button type="button" class="table-sort-btn" data-sort="overall">Overall net <span class="sort-indicator" aria-hidden="true">↕</span></button></th>
+                <th scope="col" data-sort-column="republican" aria-sort="none"><button type="button" class="table-sort-btn" data-sort="republican">Republican net <span class="sort-indicator" aria-hidden="true">↕</span></button></th>
+                <th scope="col" data-sort-column="democratic" aria-sort="none"><button type="button" class="table-sort-btn" data-sort="democratic">Democratic net <span class="sort-indicator" aria-hidden="true">↕</span></button></th>
+                <th scope="col" data-sort-column="trump2024" aria-sort="none"><button type="button" class="table-sort-btn" data-sort="trump2024">Trump 2024 vote share <span class="sort-indicator" aria-hidden="true">↕</span></button></th>
+              </tr></thead>
+              <tbody id="state-tbody"></tbody>
+            </table>
+          </div>
+          <p class="table-footnote">Click a column header to sort; click again to reverse. Net approval is a difference in percentage points. The 2024 Trump column is his share of presidential votes cast, not an approval measurement.</p>
+        </div>
+      </div>
+
+      <aside class="panel detail-panel" aria-labelledby="detail-title">
+        <p class="eyebrow small">State detail</p>
+        <div class="detail-title-row"><h2 id="detail-title">Select a state</h2><span id="detail-abbr" class="abbr"></span></div>
+        <p id="detail-date" class="detail-date">Reporting date —</p>
+        <div class="detail-rule"></div>
+        <div class="metric-big"><span id="detail-big" class="metric-value">—</span><span id="detail-big-caption" class="metric-caption">Overall net approval</span></div>
+        <p id="detail-group" class="detail-group">Estimated approval among registered voters</p>
+        <div class="breakdown">
+          <div class="breakdown-row"><span>Approve</span><strong id="detail-approve">—</strong></div><div class="bar-track"><div class="bar-fill positive" id="bar-approve"></div></div>
+          <div class="breakdown-row"><span>Disapprove</span><strong id="detail-disapprove">—</strong></div><div class="bar-track"><div class="bar-fill negative" id="bar-disapprove"></div></div>
+          <div class="breakdown-row"><span>Neither</span><strong id="detail-neither">—</strong></div><div class="bar-track"><div class="bar-fill neutral" id="bar-neither"></div></div>
+        </div>
+        <div class="election-context">
+          <span class="election-context-label">2024 presidential election</span>
+          <p class="election-context-statement">Trump <strong id="detail-2024-result">—</strong> <strong id="detail-2024-state">—</strong> in 2024 with <strong id="detail-2024-share" class="election-context-share">—</strong> of the votes cast.</p>
+          <a id="detail-2024-source" href="https://www.fec.gov/documents/5645/2024presgeresults.xlsx" target="_blank" rel="noopener noreferrer">Source: Federal Election Commission ↗</a>
+        </div>
+        <a id="detail-source" class="source-button" href="https://civiqs.com/results/approve_president_trump_2025" target="_blank" rel="noopener noreferrer">See state results at Civiqs <span aria-hidden="true">↗</span></a>
+        <p class="detail-note">Each view uses Civiqs estimates for the selected population. Net approval is derived from the displayed rounded percentages and may differ slightly from Civiqs's published net.</p>
+      </aside>
+    </section>
+
+    <section id="methodology" class="methodology" aria-labelledby="method-title">
+      <div><p class="eyebrow small">About this project</p><h2 id="method-title">Source & methodology</h2></div>
+      <div class="method-copy">
+        <p><strong>Polling source:</strong> <a href="https://civiqs.com/results/approve_president_trump_2025" target="_blank" rel="noopener noreferrer">Civiqs — Donald Trump: Job Approval, Second Term</a>. Values shown are rounded modeled estimates as displayed on the Civiqs results page, not results of 50 independent state polls. See <a href="https://civiqs.com/content/methodology" target="_blank" rel="noopener noreferrer">Civiqs's methodology</a>. Civiqs estimates are based on sampled survey responses and statistical modeling; they do not represent interviews with every registered voter in a state.</p>
+        <p><strong>Map views:</strong> All three views show <em>net approval</em>, calculated as approval minus disapproval, in percentage points (pp). A % sign is used beside net values as a familiar display convention, but the calculation is a difference in percentage points. Overall uses all registered voters; Republican and Democratic views measure net approval <em>within each party</em> for the selected state. The party maps use their own labeled, data-driven color ranges to make small differences visible; colors should not be compared across different map views.</p>
+        <p><strong>Rounding:</strong> All net values are derived from the displayed approval and disapproval estimates, not Civiqs's unrounded model, and may differ slightly from Civiqs's published net values. When Civiqs shows &lt;1%, its source label is preserved and 0.5% is used as a computational placeholder. All derived net figures are rounded to the nearest whole number for display, with halves rounded away from zero. These values remain approximate. Percentages may not total 100 because of rounding.</p>
+        <p><strong>2024 election results:</strong> Trump's 2024 popular-vote share is calculated as his votes divided by all presidential votes reported in that state, including third-party and reported write-in votes, times 100. Vote totals come from the <a href="https://www.fec.gov/documents/5645/2024presgeresults.xlsx" target="_blank" rel="noopener noreferrer">Federal Election Commission's official 2024 presidential results</a>. The FEC denominator is ballots cast for president; Civiqs estimates opinions among registered voters at a later date. The two measures are not directly interchangeable. The won/lost wording is based on statewide popular-vote results, not district-level electoral vote allocations.</p>
+        <p><strong>Geography:</strong> Boundaries from <a href="https://github.com/topojson/us-atlas" target="_blank" rel="noopener noreferrer">U.S. Atlas</a>, derived from U.S. Census Bureau cartographic boundary data. The dataset covers 50 states, not Washington, D.C. or territories. This dashboard is an independently designed visualization, not an official Civiqs product.</p>
+        
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="wrap footer-inner"><span>Trump Approval by State • Prototype</span><a href="#page-title">Back to top ↑</a></div></footer>
+</body>
+</html>

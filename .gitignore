@@ -1,0 +1,16 @@
+.venv/
+.idea/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+data/raw/
+data/processed/
+.dashboard_backups/
+
+# Local environments and project working files
+/data/
+venv/
+*.py[cod]
+.env
+.env.*
+*.log
