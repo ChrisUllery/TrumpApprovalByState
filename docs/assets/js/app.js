@@ -224,10 +224,34 @@
     moveTooltip(event);
   }
   function moveTooltip(event) {
-    const frame = $("map-frame");const box = frame.getBoundingClientRect();const tip = $("tooltip");
-    const x = Math.max(0,Math.min(event.clientX-box.left+12, box.width-tip.offsetWidth-3));
-    const y = Math.max(0,Math.min(event.clientY-box.top-50, box.height-tip.offsetHeight));
-    tip.style.left = `${x}px`;tip.style.top = `${y}px`;
+    // Keep the tooltip inside the map, flipping left before the right edge.
+    const frame = $("map-frame");
+    const tip = $("tooltip");
+    const bounds = frame.getBoundingClientRect();
+    const gap = 18;
+    const pad = 8;
+    const pointerX = event.clientX - bounds.left;
+    const pointerY = event.clientY - bounds.top;
+    const width = tip.offsetWidth;
+    const height = tip.offsetHeight;
+
+    // Put the card to the right unless it would cross the map's right border.
+    let left = pointerX + gap;
+    if (left + width > bounds.width - pad) {
+      left = pointerX - gap - width;
+    }
+    // Last-resort clamp for unusually narrow windows.
+    left = Math.max(pad, Math.min(left, bounds.width - width - pad));
+
+    // Center vertically alongside the pointer and stay inside the map bounds.
+    let top = pointerY - height / 2;
+    top = Math.max(pad, Math.min(top, bounds.height - height - pad));
+
+    // The map frame already has position:relative in styles.css.
+    tip.style.position = "absolute";
+    tip.style.zIndex = "10";
+    tip.style.left = `${left}px`;
+    tip.style.top = `${top}px`;
   }
   function renderMapColors() {
     d3.selectAll(".state-path").attr("fill",d => ramp(value(state.byName.get(d.properties.name)),state.metric))
