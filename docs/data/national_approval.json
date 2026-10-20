@@ -1,12 +1,12 @@
 {
-  "report_date": "2026-10-16",
-  "retrieved_at_utc": "2026-10-17T13:00:49.209283+00:00",
+  "report_date": "2026-10-19",
+  "retrieved_at_utc": "2026-10-20T13:01:22.621122+00:00",
   "groups": {
     "net": {
-      "approve": 33.0,
-      "approve_display": "33%",
-      "disapprove": 60.0,
-      "disapprove_display": "60%",
+      "approve": 32.0,
+      "approve_display": "32%",
+      "disapprove": 61.0,
+      "disapprove_display": "61%",
       "neither": 7.0,
       "neither_display": "7%",
       "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true"
@@ -21,8 +21,8 @@
       "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Republican"
     },
     "democratic": {
-      "approve": 2.0,
-      "approve_display": "2%",
+      "approve": 1.0,
+      "approve_display": "1%",
       "disapprove": 98.0,
       "disapprove_display": "98%",
       "neither": 0.5,
