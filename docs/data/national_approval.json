@@ -1,6 +1,6 @@
 {
-  "report_date": "2026-11-20",
-  "retrieved_at_utc": "2026-11-21T13:00:48.427248+00:00",
+  "report_date": "2026-11-21",
+  "retrieved_at_utc": "2026-11-22T13:00:49.945640+00:00",
   "groups": {
     "net": {
       "approve": 34.0,
@@ -12,8 +12,8 @@
       "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true"
     },
     "republican": {
-      "approve": 78.0,
-      "approve_display": "78%",
+      "approve": 79.0,
+      "approve_display": "79%",
       "disapprove": 11.0,
       "disapprove_display": "11%",
       "neither": 11.0,
@@ -23,8 +23,8 @@
     "democratic": {
       "approve": 2.0,
       "approve_display": "2%",
-      "disapprove": 98.0,
-      "disapprove_display": "98%",
+      "disapprove": 97.0,
+      "disapprove_display": "97%",
       "neither": 0.5,
       "neither_display": "<1%",
       "source_url": "https://civiqs.com/results/approve_president_trump_2025?uncertainty=true&zoomIn=true&annotations=true&party=Democrat"
