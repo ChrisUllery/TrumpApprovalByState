@@ -1,10 +1,10 @@
 {
-  "report_date": "2026-11-23",
-  "retrieved_at_utc": "2026-11-24T13:00:48.120477+00:00",
+  "report_date": "2026-11-24",
+  "retrieved_at_utc": "2026-11-25T13:00:47.615183+00:00",
   "groups": {
     "net": {
-      "approve": 34.0,
-      "approve_display": "34%",
+      "approve": 35.0,
+      "approve_display": "35%",
       "disapprove": 59.0,
       "disapprove_display": "59%",
       "neither": 7.0,
